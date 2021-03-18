@@ -2,12 +2,19 @@
 <html>
     <body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
         <head>
-            <title></title>
+            <title>Food Factory Feedback</title>
+            <nav>
+                <div class="comp-logo"><a href="#" id="logo"><img src="#" alt="Company Logo"></a></div>
+                <div class="links"><a href="#"><h4>About us</h4></a>
+                <a href="#"><h4>Follow us</h4></a></div>
+            </nav>
         </head>
         <main>
+            
             <div id="parent-container">
-                <div>
+                <div id="text-container">
                     <h1 id="title">dfdbfjdhjssd</h1>
                     <p id="description">sgdasashajs</p>
                 </div>
@@ -15,30 +22,34 @@
                     <div id="form-container">
                         <form id="survey-form">
                             <label id="name-label">name</label>
-                            <input id="name" type="text" required placeholder="enter your fullname">
+                            <input id="name" class="input" type="text" required placeholder="enter your fullname">
 
                             <label id="email-label">email</label>
-                            <input id="email" type="email" required placeholder="enter your email address">
+                            <input id="email" class="input" type="email" required placeholder="enter your email address">
 
                             <label id="number-label">Phone number(ngr)</label>
-                            <input id="number" type="number" required placeholder="eg. 08160525401" 
-                            min="11" max="11">
+                            <input id="number" class="input" type="number" required placeholder="eg. 08160525401" 
+                            min="0" max="10">
 
-                            <label id="dropdown-label">Pick an option</label>
+                            <label id="dropdown-label">Where is your preffered location</label>
                             <select id="dropdown">
-                                <option value="">Option 1</option>
-                                <option value="">Option 2</option>
-                                <option value="">Option 3</option>
-                                <option value="">Option 4</option>
-                                <option value="">Option 5</option>
+                                <option value="">select a option</option>
+                                <option value="">Abuja</option>
+                                <option value="">Port Harcourt</option>
+                                <option value="">Kaduna</option>
+                                <option value="">Lagos</option>
+                                <option value="">Cross River</option>
                             </select>
 
+                            
                             <label id="checkbox-label">Pick options</label>
-                            <input type="checkbox" id="checkbox" value="opt 1">Option 1
-                            <input type="checkbox" id="checkbox" value="opt 2">Option 2
-                            <input type="checkbox" id="checkbox" value="opt 3">Option 3
-                            <input type="checkbox" id="checkbox" value="opt 4">Option 4
-                            <input type="checkbox" id="checkbox" value="opt 5">Option 5
+                            <div id="c-container">
+                            <input class="cinput" type="checkbox" id="checkbox" value="opt 1">Option 1
+                            <input class="cinput" type="checkbox" id="checkbox" value="opt 2">Option 2
+                            <input class="cinput" type="checkbox" id="checkbox" value="opt 3">Option 3
+                            <input class="cinput" type="checkbox" id="checkbox" value="opt 4">Option 4
+                            <input class="cinput" type="checkbox" id="checkbox" value="opt 5">Option 5
+                            </div>
 
                             <label id="radio-label">Pick options</label>
                             <input type="radio" id="radio" value="opt 1" name="a">Option 1
@@ -51,7 +62,7 @@
                             <textarea id="textarea" minlength="1" maxlength="225" 
                             placeholder="enter text here"></textarea>
 
-                            <input type="button" id="button">SUBMIT
+                            <input type="submit" id="submit" value="submit">SUBMIT
                         </form>
                     </div>      
                 </div>

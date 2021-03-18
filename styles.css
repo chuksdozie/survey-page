@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  width: 100%;
+  background-color: brown;
+  margin: auto;
+}
+
+main {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+  background-color: rgb(158, 40, 40);
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.comp-logo {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px 10px 10px;
+}
+
+h4 {
+  margin: 10px 10px 10px 10px;
+}
+
+#parent-container {
+  margin: auto;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+h1 {
+  margin-top: 5rem;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 3px;
+}
+
+#form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: auto;
+}
+
+#survey-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 3rem) auto 3rem auto;
+  width: 80%;
+  height: auto;
+  justify-items: stretch;
+}
+
+label {
+  align-self: flex-end;
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+  background-color: brown;
+}
+
+.input {
+  height: 3rem;
+  border-radius: 5px;
+  margin-top: 0px;
+  background-color: yellow;
+}
+
+input {
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+#dropdown {
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+#c-container {
+  display: grid;
+  grid-template-columns: 5% 90%;
+  justify-items: left;
+  align-items: center;
+  font-size: 0.9rem;
+}
