@@ -27,11 +27,15 @@
                             <label id="email-label">email</label>
                             <input id="email" class="input" type="email" required placeholder="enter your email address">
 
-                            <label id="number-label">Phone number(ngr)</label>
+                            <label id="number-label">Phone number (Nigerians only)</label>
                             <input id="number" class="input" type="number" required placeholder="eg. 08160525401" 
-                            min="0" max="10">
+                            minlength="11" maxlength="11">
 
-                            <label id="dropdown-label">Where is your preffered location</label>
+                            <label id="number-label">How many times have you ordered from us?</label>
+                            <input id="number" class="input" type="number" required placeholder="eg. 1 means once" 
+                            min="1" max="50">
+
+                            <label id="dropdown-label">Where is your preferred location</label>
                             <select id="dropdown">
                                 <option value="">select a option</option>
                                 <option value="">Abuja</option>

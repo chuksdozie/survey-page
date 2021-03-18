@@ -7,7 +7,8 @@ body {
   width: 100%;
   background-color: brown;
   margin: auto;
-  background-image: url(./images/fries.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(100, 0, 0, 0.5));
+  background-image: url(./images/fries2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,7 +85,7 @@ p {
 #survey-form {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, 3rem) auto 3rem auto 3rem auto auto;
+  grid-template-rows: repeat(11, 3rem) auto 3rem auto 3rem auto auto;
   width: 100%;
   height: auto;
   justify-items: stretch;
@@ -96,7 +97,8 @@ label {
   align-self: flex-end;
   font-size: 0.9rem;
   margin-bottom: 0px;
-  background-color: brown;
+  color: beige;
+  /*background-color: brown;*/
 }
 
 .input {
