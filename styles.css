@@ -7,6 +7,11 @@ body {
   width: 100%;
   background-color: brown;
   margin: auto;
+  background-image: url(./images/IMG_20210318_142711_292.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3rem;
 }
 
 main {
@@ -74,10 +79,11 @@ p {
 #survey-form {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, 3rem) auto 3rem auto;
+  grid-template-rows: repeat(9, 3rem) auto 3rem auto 3rem auto auto;
   width: 80%;
   height: auto;
   justify-items: stretch;
+  padding: 2rem;
 }
 
 label {
@@ -110,4 +116,25 @@ input {
   justify-items: left;
   align-items: center;
   font-size: 0.9rem;
+}
+
+#r-container {
+  display: grid;
+  grid-template-columns: 5% 90%;
+  justify-items: left;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+textarea {
+  height: 7rem;
+  border-radius: 5px;
+}
+
+#submit {
+  margin-top: 2rem;
+  height: 3rem;
+  border-radius: 7px;
+  border-width: 0px;
+  background-color: rgba(0, 225, 0, 0.8);
 }
