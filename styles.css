@@ -1,19 +1,28 @@
+/*this is for making sure that no element shoots outside the page*/
 * {
   box-sizing: border-box;
 }
 
+/*code that controls the general webpage*/
 body {
   font-family: poppins;
+  /*the thickness of the font*/
   font-weight: 500;
+  /*spacing between text*/
   font-stretch: wider;
   width: 100%;
   background-color: brown;
+  /*make elements directly on the body to go to the centre horizontally*/
   margin: auto;
+  /*create a faded red fradient over the background image*/
   background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(200, 0, 0, 0.5));
   background-image: url(./images/fries2.jpeg);
   background-position: center;
+  /*making sure that the picture doesnt form a repeat pattern on the page*/
   background-repeat: no-repeat;
+  /*stretch or shrink to fill the page*/
   background-size: cover;
+  /*making sure the bg image doesnt scroll*/
   background-attachment: fixed;
   padding-bottom: 3rem;
 }
@@ -23,14 +32,17 @@ main {
 }
 
 nav {
+  /*invoking the power of flexbox*/
   display: flex;
   overflow: hidden;
   flex-direction: row;
   justify-content: space-between;
   margin: 0px;
   background-color: rgb(158, 40, 40);
+  /*making the nav bar stick to the top*/
   top: 0;
   width: 100%;
+  /*making sure that the nav bar doesnt scroll*/
   position: fixed;
   box-shadow: 0px 1px 7px 1px black;
   color: azure;
